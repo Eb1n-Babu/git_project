@@ -1,0 +1,34 @@
+Key Steps to Get Started
+
+Create a project folder
+Navigate to the folder
+Initialize a Git repository
+
+Initialize Git
+
+git init 
+
+Create a New File
+
+touch git.txt
+touch README.md
+
+Here are some key commands for staging:
+
+git add <file> - Stage a file
+git add --all or git add -A - Stage all changes
+git status - See what is staged
+git restore --staged <file> - Unstage a file
+
+Troubleshooting
+
+Staged the wrong file? Use git restore --staged <file> to unstage it.
+Forgot to stage a file? Just run git add <file> again before you commit.
+Not sure what's staged? Run git status to see what will be committed.
+
+commit 
+
+git commit -m "message" - Commit staged changes with a message
+git commit -a -m "message" - Commit all tracked changes (skip staging)
+git log - See commit history
+
