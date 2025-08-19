@@ -176,3 +176,26 @@ Troubleshooting
 Can't see your changes? Make sure you have committed your work. Uncommitted changes won't appear in the history.
 Log is too long? Use git log --oneline or git log --since to make it easier to read.
 How do I quit the log view? Press q to exit the log or diff view.
+
+
+Why and When to Use Git Help?
+Git has many commands and options.
+
+If you forget how a command works or want to learn about its options, you can use Git's built-in help.
+
+This is the fastest way to get answers without leaving your terminal.
+
+Key Commands for Getting Help
+git help <command> - See the manual page for a command
+git <command> --help - See help for a command (same as above)
+git <command> -h - See a quick summary of options
+git help --all - List all possible Git commands
+git help -g - List guides and concepts
+List All Git Commands (git help --all)
+git help -g Shows a list of guides and concept topics for deeper learning:
+
+
+roubleshooting
+How do I quit the help viewer? Press q to exit the help page.
+Help page won't open? Try git <command> -h for a quick summary instead.
+How do I search for a word? In the help viewer, press / then type your search term and press Enter.
