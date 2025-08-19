@@ -42,4 +42,8 @@ git commit --no-edit
 Quickly add staged changes to last commit, keep message:
 git commit --amend --no-edit
 
+Use previous commit message (no editor):
+
+=============================================
+
 
