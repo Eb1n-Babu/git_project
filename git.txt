@@ -68,3 +68,21 @@ Releases: Tags let you mark when your project is ready for release, so you (and 
 Milestones: Use tags to highlight major milestones, like when a big feature is finished or a bug is fixed.
 Deployment: Many deployment tools use tags to know which version of your code to deploy.
 Hotfixes: If you need to fix an old version, tags make it easy to check out and patch the right code.
+
+git tag -a v1.0 -m "Version 1.0 release"
+git tag v1.1 1a2b3c4d
+git tag
+git show v1.0
+
+git push origin v1.0
+git push --tags
+git tag -d v1.0
+git push origin --delete tag v1.0
+git tag -f v1.0 <new-commit-hash>
+git push --force origin v1.0
+
+Troubleshooting
+Tag already exists? Use git tag -d <tagname> to delete it, then re-create.
+Pushed the wrong tag? Delete it locally and remotely, then push the correct tag.
+Tag not showing on remote? Remember to push tags with git push origin <tagname> or git push --tags.
+Need to overwrite a tag on the remote? You can force-push a tag with git push --force origin <tagname>, but be careful! This will overwrite the tag for everyone using the remote.
