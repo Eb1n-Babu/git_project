@@ -257,3 +257,61 @@ git checkout  main
 Switched to branch 'main'
 
 updated 
+
+Always commit or stash your changes before starting a merge.
+Regularly merge from the main branch into your feature branch to minimize conflicts.
+Read and resolve conflicts carefully—don't just accept all changes blindly.
+Write clear and descriptive merge commit messages.
+
+
+Practical Examples
+Abort a merge: git merge --abort
+Check status during a merge: git status
+Resolve a conflict and complete the merge: Edit the conflicted file(s), then git add file and git commit
+Fast-forward merge: Happens when no new commits diverged—Git just moves the branch pointer forward.
+No-fast-forward merge: Use git merge --no-ff branch to always create a merge commit, preserving branch history.
+
+git branch -d branch_name
+
+
+What is a Merge Conflict?
+A merge conflict happens when changes in two branches touch the same part of a file and Git doesn't know which version to keep.
+
+Think of it like two people editing the same sentence in a document in different ways—Git needs your help to decide which version to use.
+
+How to Resolve a Merge Conflict
+Git will mark the conflict in your file.
+
+You need to open the file, look for lines like <<<<<<< HEAD and =======, and decide what the final version should be.
+
+Then, stage and commit your changes.
+
+Troubleshooting & Tips
+If you want to cancel a merge, use git merge --abort.
+Always commit or stash your changes before starting a merge.
+Read the conflict markers carefully and remove them after you've resolved the issue.
+Use git status to see what files need your attention.
+If you're unsure, ask a teammate or look up the error message.
+Merge Conflict Example
+Now we can move over to hello-world-images from last chapter, and keep working.
+
+Add another image file (img_hello_git.jpg) and change index.html, so it shows it:
+
+Fix mistakes (git restore, git reset, git commit --amend)
+
+Understanding the Git Workflow
+Git uses a distributed workflow that allows you to work on your code, stage changes, and commit them to your local repository before sharing with others.
+
+Understanding this workflow is essential for effective version control.
+
+The Three Areas of Git
+Working Directory: Where you make changes to your files.
+Staging Area (Index): Where you prepare changes before committing.
+Repository: Where your committed history is stored. 
+
+Best Practices for Git Workflow
+Commit frequently with clear, meaningful messages.
+Check your status often with git status to avoid surprises.
+Stage only what you intend to commit. Use git add <file> for precision.
+Push regularly to back up your work and share with others.
+Review your changes with git diff before committing. 
