@@ -54,4 +54,17 @@ Use git commit --amend -m "Corrected message" to fix the last commit message.
 Accidentally committed the wrong files?
 You can use git reset --soft HEAD~1 to undo the last commit and keep your changes staged.
 
+What is a Tag?
 
+A tag in Git is like a label or bookmark for a specific commit.
+
+Tags are most often used to mark important points in your project history, like releases (v1.0 or v2.0).
+
+Tags are a simple and reliable way to keep track of versions and share them with your team or users.
+
+Some common tag types include:
+
+Releases: Tags let you mark when your project is ready for release, so you (and others) can always find that exact version later.
+Milestones: Use tags to highlight major milestones, like when a big feature is finished or a bug is fixed.
+Deployment: Many deployment tools use tags to know which version of your code to deploy.
+Hotfixes: If you need to fix an old version, tags make it easy to check out and patch the right code.
