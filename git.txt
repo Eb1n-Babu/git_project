@@ -315,3 +315,56 @@ Check your status often with git status to avoid surprises.
 Stage only what you intend to commit. Use git add <file> for precision.
 Push regularly to back up your work and share with others.
 Review your changes with git diff before committing. 
+
+What Does Git Revert Do?
+The git revert command undoes a previous commit by creating a new commit that reverses the changes.
+
+This keeps your commit history intact and is the safest way to undo changes in a shared repository.
+
+Summary of Git Revert Commands and Options
+git revert HEAD - Revert the latest commit
+git revert <commit> - Revert a specific commit
+git revert HEAD~2 - Revert a commit further back in history
+git revert --no-edit - Skip commit message editor
+git log --oneline - Show commit history
+
+
+Summary of Git Reset Commands and Options
+git reset --soft <commit> - Move HEAD to commit, keep changes staged
+git reset --mixed <commit> - Move HEAD to commit, unstage changes (default)
+git reset --hard <commit> - Move HEAD to commit, discard all changes
+git reset <file> - Unstage a file
+git log --oneline - Show commit history
+
+What is Git Amend?
+Git Amend is a command that allows you to modify the most recent commit.
+
+You can use it to fix typos, add or remove files, or change the commit message.
+
+When to Use Git Amend
+Use Git Amend when you need to make small changes to your last commit.
+
+It's perfect for fixing mistakes, adding forgotten files, or updating the commit message.
+
+Fix Last Commit Message
+To change the last commit message, follow these steps:
+
+Open your terminal and navigate to your repository.
+Type git commit --amend -m "New message" to change the commit message.
+Press Enter to save the changes.
+
+Add Files to Last Commit
+To add files to the last commit, follow these steps:
+
+Open your terminal and navigate to your repository.
+Type git add <file> to add the file to the staging area.
+Type git commit --amend to add the file to the last commit.
+Press Enter to save the changes.
+
+Remove Files from Last Commit
+To remove files from the last commit, follow these steps:
+
+Open your terminal and navigate to your repository.
+Type git reset HEAD^ -- <file> to remove the file from the staging area.
+Type git commit --amend to remove the file from the last commit.
+Press Enter to save the changes.
