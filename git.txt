@@ -32,3 +32,14 @@ git commit -m "message" - Commit staged changes with a message
 git commit -a -m "message" - Commit all tracked changes (skip staging)
 git log - See commit history
 
+
+Other Useful Commit Options
+
+Create an empty commit:
+git commit --allow-empty -m "Start project"
+Use previous commit message (no editor):
+git commit --no-edit
+Quickly add staged changes to last commit, keep message:
+git commit --amend --no-edit
+
+
